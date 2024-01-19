@@ -1,6 +1,5 @@
 import math
 pii= math.pi
-sädeStr= input ("Anna ympyrän säde")
-säde= int(sädeStr)
-pintaala= pii * (säde**2)
-print ("Ympyrän pinta-ala on " + str(pintaala))
+säde= float(input ("Anna ympyrän säde "))
+pinta_ala = math.pi * säde**2
+print (pinta_ala)
