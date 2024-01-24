@@ -1,0 +1,7 @@
+sukupuoli= str(input("Kerro biologinen sukupuolesi: "))
+hemoglobiiniarvo= float(input("Kerro hemoglobiiniarvosi (g/l): "))
+if sukupuoli== "mies" and hemoglobiiniarvo<134:print ("Hemoglobiiniarvosi on alhainen")
+elif sukupuoli== "mies" and hemoglobiiniarvo>195:print ("Hemoglobiiniarvosi on korkea")
+elif sukupuoli== "nainen" and hemoglobiiniarvo<117:print ("Hemoglobiiniarvosi on alhainen")
+elif sukupuoli== "nainen" and hemoglobiiniarvo>175:print ("Hemoglobiiniarvosi on korkea")
+else:print("Hemoglobiiniarvosi on normaali")
