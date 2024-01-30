@@ -1,10 +1,15 @@
-oikeakäyttäjätunnus = "Python"
-oikeasalasana = "rules"
+yritykset = 0
 
-käyttäjätunnus = input ("Syötä käyttäjätunnus: ")
-salasana = input ("Syötä salasana: ")
-
-while True:
-    oikeakäyttäjätunnus = input ("Syötä käyttäjätunnus: ")
-    if käyttäjätunnus == oikeakäyttäjätunnus:
+while yritykset < 5:
+    käyttäjätunnus = input ("Syötä käyttäjätunnus: ")
+    salasana = input ("Syötä salasana ")
+    if käyttäjätunnus == "python" and salasana == "rules":
         print ("Tervetuloa")
+        break
+
+    else:
+        print ("Pääsy evätty")
+        yritykset +=1
+    if yritykset == 5:
+        print ("Yritykset ylittyivät")
+        exit()

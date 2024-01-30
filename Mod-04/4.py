@@ -8,5 +8,5 @@ while True:
          print("Oikein !")
          break
     elif luku > arvottava:
-        print ("Luku on liian suuri ")
+        print ("Luku on liian suuri")
     else: print ("Luku on liian pieni")
