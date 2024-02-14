@@ -21,7 +21,7 @@ db_connection = mysql.connector.connect(
     user='root',
     password='12345',
     autocommit=True
-    )
+)
 
 icao = input ("Anna ICAO-koodi: ")
 
