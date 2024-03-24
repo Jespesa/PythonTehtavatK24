@@ -70,13 +70,14 @@ ekaTalo = Talo(1,10,3)
 # Ajetaan eka hissi 3. kerrokseen
 ekaTalo.aja_hissiä(1,3)
 
-# Etsitään talon eka hissi
-ekaHissi = ekaTalo.hissit[0]
-print (f"Eka hissi on kerroksessa {ekaHissi.kerros}")
-print (f"Vika hissi on kerroksessa {ekaTalo.hissit[2].kerros}")
+# testaus: tulostetaan talon kaikkien hissien sijainnit.
+for tutkittava_hissi in ekaTalo.hissit:
+    print(f"Hissi on kerroksessa {tutkittava_hissi.kerros} ")
 
 print ("Palohälytys !!!")
 ekaTalo.palohälytys()
 
-print (f"Eka hissi on kerroksessa {ekaHissi.kerros}")
-print (f"Vika hissi on kerroksessa {ekaTalo.hissit[2].kerros}")
+# testataan ovatko kaikki hissit alimmassa kerroksessa
+print("Hissien sijainnit palohälytyksen jälkeen:")
+for tutkittava_hissi in ekaTalo.hissit:
+    print(f"Hissi on kerroksessa {tutkittava_hissi.kerros} ")
